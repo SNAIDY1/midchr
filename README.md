@@ -36,3 +36,25 @@ define RGBHEX To Use rgb hex colors:
 ```C
 #define RGBHEX
 ```
+
+Functions and what they do:
+| Function  | what it do |
+| ------------- | ------------- |
+| void Midchr(const char* msg)  | Center Text In X And Y  |
+| void MidchrY(const char* msg) | Center Text In Y        |
+| void MidchrX(const char* msg) | Center Text In X        |
+| void RGB(char *hex)           | Coloring Text (define RGBHEX to use it) |
+
+## Example
+```C
+#define RGBHEX
+include "middle.h"
+
+int main() {
+
+    RGB("0xff0000");
+    MidchrX("Hello Middle Character!!");
+
+}
+```
+
