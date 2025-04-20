@@ -3,26 +3,12 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include <own/termcolor.h>
+#include "middle.h"
 
 
 
 
 
-
-/* TODO:
- * 1 - Spearate Project Into 2 Files
- * 2 - Write These Functions:
- * 	* Midchr(const char *msg,int color): Center Width And Hight
- * 		must be hex or a symbol
- * 	* MidchrR(const char *msg)
- * 	* MidchrC(const char *msg)
- * 	* 
- * 	* 
- *  
- *
- *
- * */
 
 
 char* rgb;
@@ -38,6 +24,11 @@ int* HexToInt(char *rgbHex) {
 	{
 		memmove(rgbHex, rgbHex + 2, strlen(rgbHex + 2) + 1);
 	}
+	if (strncmp(rgbHex,"#",1) == 0)
+	{
+		memmove(rgbHex, rgbHex + 1, strlen(rgbHex + 2) + 1);
+	}
+
 
 	char r[3] = {rgbHex[0],rgbHex[1],'\0'};
 	char g[3] = {rgbHex[2],rgbHex[3],'\0'};
