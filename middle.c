@@ -12,8 +12,6 @@
 static char *color;
 int centerText;
 
-// FUCK This Function
-// I Was Fixing It For 2 Days
 int* HexToIntRGB(char *rgbHex);
 int* HexToIntRGB(char *rgbHex) {
 
@@ -67,16 +65,17 @@ void Midchr(const char* msg) {
 	for (int i = 0;i < row/2;i++)
 	{
 		printf("\n");
-	
 	}
+
 	printf("%*s%s\n",centerText,msg,CRESET);
+
 	for (int i = 0;i < row/2;i++)
 	{
 		printf("\n");
-	
 	}
-	
 }
+
+
 void MidchrY(const char* msg)
 {
 	struct winsize w;
@@ -85,16 +84,16 @@ void MidchrY(const char* msg)
 	for (int i = 0;i < row/2;i++)
 	{
 		printf("\n");
-	
 	}
+
 	printf("%s%s\n",msg,CRESET);
+
 	for (int i = 0;i < row/2;i++)
 	{
 		printf("\n");
-	
 	}
-
 }
+
 void MidchrX(const char* msg)
 {
 	struct winsize w;
@@ -102,5 +101,4 @@ void MidchrX(const char* msg)
 	int col = w.ws_col;
 	int centerText = col/2+strlen(msg)/2;
 	printf("%*s%s\n",centerText,msg,CRESET);
-
 }

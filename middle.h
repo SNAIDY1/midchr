@@ -1,7 +1,6 @@
 #ifndef MIDDLE_H
 #define MIDDLE_H
 
-// Colors
 #define BLK "\e[0;30m"
 #define RED "\e[0;31m"
 #define GRN "\e[0;32m"
@@ -11,20 +10,17 @@
 #define CYN "\e[0;36m"
 #define WHT "\e[0;37m"
 
-// Reset Colors and Text Formatting To Default
 #define CRESET "\e[0m"
 
-// Text Formatting Styles
-#define BLD "\e[1m" // Bold
-#define ITC "\e[3m" // Italic
-#define BLN "\e[5m" // Blink
+#define BLD "\e[1m"
+#define ITC "\e[3m 
+#define BLN "\e[5m"
 
 
 
-// Text Centering Functions
-void Midchr(const char* msg);  // Center Text In X And Y
-void MidchrY(const char* msg); // Center Text In Y
-void MidchrX(const char* msg); // Center Text In X
+void Midchr(const char* msg);
+void MidchrY(const char* msg);
+void MidchrX(const char* msg);
 
 #ifdef RGBHEX
 void RGB(char *hex);
