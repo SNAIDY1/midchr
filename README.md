@@ -48,7 +48,7 @@ Functions and what they do:
 ## Example
 ```C
 #define RGBHEX
-include "middle.h"
+#include "middle.h"
 
 int main() {
 
