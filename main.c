@@ -98,7 +98,7 @@ int main(int argc,char *argv[]) {
 			printf(BWHT "\nOPTIONS:" CRESET);
 			
 			printf("\n\t");
-			printf("--rgb=HEX\tRGB Colors (Only HEX)");
+			printf("--rgb=HEX\tRGB Colors");
 
 			printf("\n\t");
 			printf("--green\t\tGreen Foreground");
