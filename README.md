@@ -28,4 +28,11 @@ Pretty Simple!
 
 ## How To Use midchr Library
 
-
+To include midchr libary:
+```C
+#include "middle.h"
+```
+define RGBHEX To Use rgb hex colors:
+```C
+#define RGBHEX
+```
